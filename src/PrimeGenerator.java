@@ -38,6 +38,7 @@ public class PrimeGenerator {
 	}
 
 	private void sieveOfEratosthenes(int n) {
+		
 		for(int p = 2; p * p <= n; p++) {
 			if(prime[p]) {
 				for(int i = p * 2; i <= n; i += p)
